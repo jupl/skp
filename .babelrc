@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    ["transform-semantic-ui-react-imports", {
+      "addLessImports": true
+    }],
+    "transform-runtime",
+    "react-hot-loader/babel"
+  ],
+  "presets": [["env", {"modules": false}]],
+  "env": {
+    "production": {
+      "plugins": ["transform-react-inline-elements"]
+    },
+    "storybook": {
+      "presets": ["env"]
+    },
+    "test": {
+      "presets": ["env"]
+    }
+  }
+}

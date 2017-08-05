@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "eslint-config-jupl/ts",
+    "eslint-config-jupl/ts/react"
+  ],
+  "rules": {
+    "no-namespace": false
+  }
+}

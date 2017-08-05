@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppRoot> Template should render as expected 1`] = `
+<styled.div>
+  <styled.div>
+    <Container>
+      <Menu
+        secondary={true}
+      >
+        <MenuItem
+          header={true}
+        >
+          Application
+        </MenuItem>
+      </Menu>
+    </Container>
+  </styled.div>
+  <styled.div>
+    <Container>
+      <Header>
+        Hello, world
+      </Header>
+    </Container>
+  </styled.div>
+</styled.div>
+`;
