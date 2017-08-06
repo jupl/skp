@@ -1,6 +1,7 @@
 import * as React from 'react'
-import {Container, Header, Menu} from 'semantic-ui-react'
+import {Container, Menu} from 'semantic-ui-react'
 import styled from 'styled-components'
+import {AppPage} from '../page'
 
 // Container component
 const Layout = styled.div`
@@ -10,7 +11,6 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
 `
-const MenuBar = styled.div``
 const Body = styled.div`
   flex: 1;
   overflow: auto;
@@ -23,17 +23,13 @@ const Body = styled.div`
 export function AppRoot() {
   return (
     <Layout>
-      <MenuBar>
-        <Container>
-          <Menu secondary>
-            <Menu.Item header>Application</Menu.Item>
-          </Menu>
-        </Container>
-      </MenuBar>
+      <Container>
+        <Menu secondary>
+          <Menu.Item header>Application</Menu.Item>
+        </Menu>
+      </Container>
       <Body>
-        <Container>
-          <Header>Hello, world</Header>
-        </Container>
+        <AppPage />
       </Body>
     </Layout>
   )
