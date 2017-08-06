@@ -54,6 +54,7 @@
     "hapi": "^16.5.0",
     "inert": "^4.2.0",
     "react-apollo": "^1.4.8",
+    "redux-first-router": "^1.9.11",
     "semantic-ui-react": "^0.71.3"
   },
   "devDependencies": {
@@ -63,6 +64,7 @@
     "@types/enzyme": "^2.8.2",
     "@types/globule": "^1.1.0",
     "@types/hapi": "^16.1.6",
+    "@types/history": "^4.6.0",
     "@types/inert": "^4.2.2",
     "@types/jest": "^20.0.4",
     "@types/node": "^8.0.14",
@@ -71,6 +73,7 @@
     "@types/react-hot-loader": "^3.0.3",
     "@types/react-redux": "^4.4.46",
     "@types/redux-actions": "^1.2.6",
+    "@types/redux-first-router": "^1.4.1",
     "@types/storybook__addon-actions": "^3.0.1",
     "@types/storybook__react": "^3.0.2",
     "@types/webpack": "^3.0.4",
@@ -87,6 +90,7 @@
     "file-loader": "^0.11.2",
     "globule": "^1.2.0",
     "hapi-webpack-plugin": "^2.0.0",
+    "history": "^4.6.3",
     "jest": "^20.0.3",
     "jest-cli": "^20.0.4",
     "node-dev": "^3.1.3",
