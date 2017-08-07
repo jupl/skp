@@ -34,7 +34,7 @@ const AUTHORS: Author[] = [
     comments: [],
     commentIds: [1],
     posts: [],
-    postIds: [1],
+    postIds: [1, 2],
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const AUTHORS: Author[] = [
     comments: [],
     commentIds: [],
     posts: [],
-    postIds: [],
+    postIds: [3],
   },
 ]
 const COMMENTS: Comment[] = [
@@ -74,6 +74,24 @@ const POSTS: Post[] = [
     authorId: 1,
     comments: [],
     commentIds: [1],
+  },
+  {
+    id: 2,
+    title: 'Second post',
+    description: 'Second post description',
+    author: undefined!,
+    authorId: 1,
+    comments: [],
+    commentIds: [],
+  },
+  {
+    id: 3,
+    title: 'Third post',
+    description: 'First post description',
+    author: undefined!,
+    authorId: 2,
+    comments: [],
+    commentIds: [],
   },
 ]
 

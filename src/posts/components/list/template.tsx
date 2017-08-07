@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {List} from 'semantic-ui-react'
 import {Post} from '../../graphql'
 import {PostsListItem} from '../list-item'
 
@@ -18,7 +19,7 @@ export namespace PostsList {
 
 /** Render list of posts */
 export function PostsList({posts, selectPost}: PostsList.Props) {
-  return <div>{posts.map(createPostsListItem)}</div>
+  return <List divided relaxed>{posts.map(createPostsListItem)}</List>
 
   function createPostsListItem(post: Post) {
     return <PostsListItem key={post.id} post={post} onClick={onClick} />

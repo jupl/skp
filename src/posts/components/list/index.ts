@@ -11,6 +11,10 @@ export const PostsList = graphql<Result, {}, Template.Data>(gql`
     posts {
       id
       title
+      author {
+        id
+        name
+      }
     }
   }
 `, {

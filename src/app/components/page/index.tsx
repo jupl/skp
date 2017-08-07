@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {connect} from 'react-redux'
 import {Container} from 'semantic-ui-react'
+import {PostsPage} from '../../../posts/components/page'
 import {State} from '../../reducer'
 import {AppHomePage} from '../home-page'
 
@@ -21,10 +22,13 @@ export const AppPage = connect(data)(function AppPage({Component}: Props) {
  * @return Props to pass to component
  */
 export function data({location: {type}}: State): Props {
-  let Component: Props['Component']
+  let Component
   switch(type) {
   case 'APP_HOME_ROUTE':
     Component = AppHomePage
+    break
+  case 'POSTS_ROUTE':
+    Component = PostsPage
     break
   default:
     Component = () => <Container>404</Container>
