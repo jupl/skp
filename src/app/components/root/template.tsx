@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Link from 'redux-first-router-link'
 import {Container, Menu} from 'semantic-ui-react'
 import styled from 'styled-components'
 import {AppPage} from '../page'
@@ -25,7 +26,7 @@ export function AppRoot() {
     <Layout>
       <Container>
         <Menu secondary>
-          <Menu.Item header>Application</Menu.Item>
+          <Link className="header item" to="/">Application</Link>
         </Menu>
       </Container>
       <Body>
